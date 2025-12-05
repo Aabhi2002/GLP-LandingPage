@@ -50,7 +50,13 @@ export const HowToJoinSection = () => {
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
               How to Access{" "}
-              <span className="text-gradient-coral">GLP-1 360™</span>
+              <span className="text-gradient-coral inline-flex items-baseline gap-1">
+                <span>GLP-1</span>
+                <span className="inline-flex items-baseline">
+                  <span className="font-black" style={{ textShadow: "0 0 10px rgba(139,195,74,0.4)", filter: "brightness(1.1)" }}>360</span>
+                  <sup className="text-[0.6em] align-super font-bold ml-0.5" style={{ textShadow: "0 0 8px rgba(139,195,74,0.3)" }}>™</sup>
+                </span>
+              </span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Getting started is simple. Follow these four steps to begin your protected transformation.

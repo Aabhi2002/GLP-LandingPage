@@ -29,8 +29,8 @@ export const Header = () => {
       transition={{ duration: 0.5 }}
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled 
-          ? "bg-card/95 backdrop-blur-xl shadow-md py-3" 
+        isScrolled
+          ? "bg-card/95 backdrop-blur-xl shadow-md py-3"
           : "bg-transparent py-5"
       )}
     >
@@ -39,10 +39,36 @@ export const Header = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <div className={cn(
-              "text-xl sm:text-2xl font-extrabold font-display transition-colors",
+              "text-xl sm:text-2xl font-extrabold font-display transition-colors flex items-baseline",
               isScrolled ? "text-foreground" : "text-primary-foreground"
             )}>
-              GLP-1 360<sup className="text-xs align-super">™</sup>
+              GLP-1{" "}
+              <span className="inline-flex items-baseline ml-1">
+                <span
+                  className={cn(
+                    "font-black",
+                    isScrolled ? "text-secondary" : "text-green-400"
+                  )}
+                  style={!isScrolled ? {
+                    textShadow: "0 0 12px rgba(139,195,74,0.5), 0 0 6px rgba(139,195,74,0.3)",
+                    filter: "brightness(1.1)"
+                  } : {}}
+                >
+                  360
+                </span>
+                <sup
+                  className={cn(
+                    "text-xs align-super ml-0.5 font-bold",
+                    isScrolled ? "text-secondary" : "text-green-400"
+                  )}
+                  style={!isScrolled ? {
+                    textShadow: "0 0 10px rgba(139,195,74,0.4)",
+                    filter: "brightness(1.1)"
+                  } : {}}
+                >
+                  ™
+                </sup>
+              </span>
             </div>
           </a>
 
@@ -64,9 +90,13 @@ export const Header = () => {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <Button 
-              variant={isScrolled ? "coral" : "hero"} 
+            <Button
+              variant={isScrolled ? "green" : "hero"}
               size="sm"
+              onClick={() => {
+                const section = document.getElementById('get-started');
+                section?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }}
             >
               Get Started
             </Button>
@@ -77,8 +107,8 @@ export const Header = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className={cn(
               "md:hidden p-2 rounded-lg transition-colors",
-              isScrolled 
-                ? "text-foreground hover:bg-muted" 
+              isScrolled
+                ? "text-foreground hover:bg-muted"
                 : "text-primary-foreground hover:bg-primary-foreground/10"
             )}
           >
@@ -108,7 +138,15 @@ export const Header = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="coral" className="mt-2">
+              <Button
+                variant="green"
+                className="mt-2"
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  const section = document.getElementById('get-started');
+                  section?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }}
+              >
                 Get Started
               </Button>
             </nav>

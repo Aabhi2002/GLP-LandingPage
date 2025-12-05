@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { 
-  ChevronDown, 
-  Rocket, 
-  RefreshCw, 
+import {
+  ChevronDown,
+  Rocket,
+  RefreshCw,
   LogOut,
   Check,
   ArrowRight
@@ -16,7 +16,7 @@ const programs = [
   {
     id: "base",
     icon: Rocket,
-    title: "GLP-1 360: BASE™",
+    title: "GLP-1 360™: BASE",
     subtitle: "Start Strong",
     perfectFor: "New users, mild side effects, early-stage support",
     color: "bg-teal-100 text-teal-700 border-teal-200",
@@ -33,7 +33,7 @@ const programs = [
   {
     id: "transform",
     icon: RefreshCw,
-    title: "GLP-1 360: TRANSFORM™",
+    title: "GLP-1 360™: TRANSFORM",
     subtitle: "Maximize Results",
     perfectFor: "Muscle loss, plateaus, gut issues, body toning goals",
     color: "bg-coral-100 text-coral-600 border-coral-200",
@@ -51,7 +51,7 @@ const programs = [
   {
     id: "exit",
     icon: LogOut,
-    title: "GLP-1 360: EXIT™",
+    title: "GLP-1 360™: EXIT",
     subtitle: "Sustain Forever",
     perfectFor: "Ready to stop GLP-1 or already regained weight",
     color: "bg-sage-200 text-teal-800 border-sage-100",
@@ -110,21 +110,44 @@ export const ProgramsSection = () => {
                     <program.icon className="w-6 h-6" />
                   </div>
                   <div className="flex-1 text-left">
-                    <h3 className="text-lg font-bold text-foreground">{program.title}</h3>
+                    <h3 className="text-lg font-bold text-foreground flex items-baseline flex-wrap gap-1">
+                      <span>GLP-1</span>
+                      <span className="inline-flex items-baseline">
+                        <span
+                          className="font-black text-secondary"
+                          style={{
+                            textShadow: "0 0 15px rgba(139,195,74,0.6), 0 0 8px rgba(139,195,74,0.4)",
+                            filter: "brightness(1.2)"
+                          }}
+                        >
+                          360
+                        </span>
+                        <sup
+                          className="text-[0.6em] align-super text-secondary ml-0.5 font-black"
+                          style={{
+                            textShadow: "0 0 10px rgba(139,195,74,0.5)",
+                            filter: "brightness(1.2)"
+                          }}
+                        >
+                          ™
+                        </sup>
+                      </span>
+                      <span>: {program.title.split(': ')[1]}</span>
+                    </h3>
                     <p className="text-sm text-muted-foreground">{program.subtitle}</p>
                   </div>
-                  <ChevronDown 
+                  <ChevronDown
                     className={cn(
                       "w-5 h-5 text-muted-foreground transition-transform duration-300",
                       openProgram === program.id && "rotate-180"
-                    )} 
+                    )}
                   />
                 </button>
 
                 {/* Content */}
                 <motion.div
                   initial={false}
-                  animate={{ 
+                  animate={{
                     height: openProgram === program.id ? "auto" : 0,
                     opacity: openProgram === program.id ? 1 : 0
                   }}

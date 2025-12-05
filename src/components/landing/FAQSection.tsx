@@ -67,16 +67,16 @@ export const FAQSection = () => {
                   className="w-full p-5 flex items-center justify-between gap-4 bg-card hover:bg-muted/50 transition-colors text-left"
                 >
                   <span className="font-semibold text-foreground">{faq.question}</span>
-                  <ChevronDown 
+                  <ChevronDown
                     className={cn(
                       "w-5 h-5 text-muted-foreground flex-shrink-0 transition-transform duration-300",
                       openFAQ === index && "rotate-180"
-                    )} 
+                    )}
                   />
                 </button>
                 <motion.div
                   initial={false}
-                  animate={{ 
+                  animate={{
                     height: openFAQ === index ? "auto" : 0,
                     opacity: openFAQ === index ? 1 : 0
                   }}

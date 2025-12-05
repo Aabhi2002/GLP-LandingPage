@@ -92,7 +92,14 @@ export const RisksSection = () => {
                 <div className="p-2 rounded-full bg-primary/20">
                   <Check className="w-5 h-5 text-primary" />
                 </div>
-                How GLP-1 360™ Protects You
+                <span className="flex items-baseline gap-1 flex-wrap">
+                  <span>How GLP-1</span>
+                  <span className="inline-flex items-baseline">
+                    <span className="font-black text-secondary" style={{ textShadow: "0 0 10px rgba(139,195,74,0.4)", filter: "brightness(1.1)" }}>360</span>
+                    <sup className="text-[0.6em] align-super text-secondary font-bold ml-0.5" style={{ textShadow: "0 0 8px rgba(139,195,74,0.3)" }}>™</sup>
+                  </span>
+                  <span>Protects You</span>
+                </span>
               </h3>
               <ul className="space-y-4">
                 {protections.map((protection, index) => (

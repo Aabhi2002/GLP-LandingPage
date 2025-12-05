@@ -7,7 +7,6 @@ import { ForYouSection } from "@/components/landing/ForYouSection";
 import { WhatYouGetSection } from "@/components/landing/WhatYouGetSection";
 import { ProgramsSection } from "@/components/landing/ProgramsSection";
 import { FAQSection } from "@/components/landing/FAQSection";
-import { HowToJoinSection } from "@/components/landing/HowToJoinSection";
 import { FinalCTASection } from "@/components/landing/FinalCTASection";
 import { Footer } from "@/components/landing/Footer";
 
@@ -29,7 +28,6 @@ const Index = () => {
       <div id="faq">
         <FAQSection />
       </div>
-      <HowToJoinSection />
       <FinalCTASection />
       <Footer />
     </main>

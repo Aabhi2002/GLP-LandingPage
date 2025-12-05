@@ -91,7 +91,27 @@ export const HeroSection = () => {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6"
             style={{ textShadow: "0 4px 20px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(0, 74, 173, 0.3)" }}
           >
-            GLP-1 360<sup className="text-2xl sm:text-3xl align-super">™</sup>
+            GLP-1{" "}
+            <span className="inline-flex items-baseline">
+              <span
+                className="font-black text-green-400"
+                style={{
+                  textShadow: "0 0 20px rgba(139,195,74,0.6), 0 0 10px rgba(139,195,74,0.4), 0 4px 8px rgba(0,0,0,0.5)",
+                  filter: "brightness(1.15)"
+                }}
+              >
+                360
+              </span>
+              <sup
+                className="text-2xl sm:text-3xl align-super text-green-400 ml-1 font-bold"
+                style={{
+                  textShadow: "0 0 15px rgba(139,195,74,0.5), 0 4px 8px rgba(0,0,0,0.5)",
+                  filter: "brightness(1.15)"
+                }}
+              >
+                ™
+              </sup>
+            </span>
           </motion.h1>
 
           {/* Sub-headline with enhanced readability */}
@@ -99,15 +119,18 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-2 mb-10"
+            className="space-y-3 mb-10"
           >
-            <p className="text-xl sm:text-2xl md:text-3xl text-white font-medium drop-shadow-lg">
+            <p className="text-2xl sm:text-3xl md:text-4xl text-white font-semibold drop-shadow-lg leading-relaxed">
               Lose weight safely.
             </p>
-            <p className="text-xl sm:text-2xl md:text-3xl text-white font-medium drop-shadow-lg">
-              Keep muscle. Fix side effects.
+            <p className="text-2xl sm:text-3xl md:text-4xl text-white font-semibold drop-shadow-lg leading-relaxed">
+              Keep muscle.
             </p>
-            <p className="text-xl sm:text-2xl md:text-3xl text-green-400 font-semibold drop-shadow-lg">
+            <p className="text-2xl sm:text-3xl md:text-4xl text-white font-semibold drop-shadow-lg leading-relaxed">
+              Fix side effects.
+            </p>
+            <p className="text-2xl sm:text-3xl md:text-4xl text-green-400 font-bold drop-shadow-lg leading-relaxed">
               Prevent rebound.
             </p>
           </motion.div>
@@ -158,31 +181,7 @@ export const HeroSection = () => {
             </Button>
           </motion.div>
 
-          {/* Trust indicators with glass effect */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="mt-16 pt-8 border-t border-white/20"
-          >
-            <p className="text-sm text-white/80 mb-4 drop-shadow-md">Trusted by thousands on their GLP-1 journey</p>
-            <div className="flex items-center justify-center gap-8 flex-wrap">
-              <div className="text-center">
-                <p className="text-2xl font-bold text-white drop-shadow-lg">5,000+</p>
-                <p className="text-xs text-white/70 drop-shadow-md">Transformations</p>
-              </div>
-              <div className="w-px h-10 bg-white/30" />
-              <div className="text-center">
-                <p className="text-2xl font-bold text-white drop-shadow-lg">98%</p>
-                <p className="text-xs text-white/70 drop-shadow-md">Success Rate</p>
-              </div>
-              <div className="w-px h-10 bg-white/30" />
-              <div className="text-center">
-                <p className="text-2xl font-bold text-white drop-shadow-lg">Zero</p>
-                <p className="text-xs text-white/70 drop-shadow-md">Rebound</p>
-              </div>
-            </div>
-          </motion.div>
+
         </div>
       </div>
 

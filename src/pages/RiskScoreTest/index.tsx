@@ -181,8 +181,29 @@ export default function RiskScoreTest() {
             <div className="container mx-auto px-4 py-8 max-w-4xl">
                 {/* Header */}
                 <div className="bg-gradient-to-br from-primary via-blue-700 to-blue-900 rounded-2xl p-8 md:p-12 text-white shadow-xl mb-8">
-                    <h1 className="text-3xl md:text-4xl font-display font-bold mb-3 text-center">
-                        GLP-1 360™ RISK SCORE TEST
+                    <h1 className="text-3xl md:text-4xl font-display font-bold mb-3 text-center flex items-baseline justify-center flex-wrap gap-2">
+                        <span>GLP-1</span>
+                        <span className="inline-flex items-baseline">
+                            <span
+                                className="font-black text-green-400"
+                                style={{
+                                    textShadow: "0 0 18px rgba(139,195,74,0.6), 0 0 10px rgba(139,195,74,0.4)",
+                                    filter: "brightness(1.15)"
+                                }}
+                            >
+                                360
+                            </span>
+                            <sup
+                                className="text-lg align-super text-green-400 ml-1 font-bold"
+                                style={{
+                                    textShadow: "0 0 12px rgba(139,195,74,0.5)",
+                                    filter: "brightness(1.15)"
+                                }}
+                            >
+                                ™
+                            </sup>
+                        </span>
+                        <span>RISK SCORE TEST</span>
                     </h1>
                     <p className="text-lg text-center mb-6 opacity-95">
                         Answer each question to receive your personalized category

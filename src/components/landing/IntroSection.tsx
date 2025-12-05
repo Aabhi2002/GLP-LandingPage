@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { AlertTriangle, Zap, TrendingDown, Scale } from "lucide-react";
+import { AlertTriangle, Zap, TrendingDown, Dumbbell } from "lucide-react";
 
 const symptoms = [
-  { icon: Scale, text: "Muscle loss" },
+  { icon: Dumbbell, text: "Muscle loss" },
   { icon: Zap, text: "Energy dips" },
   { icon: AlertTriangle, text: "Side effects" },
   { icon: TrendingDown, text: "Plateaus & rebound" },
@@ -30,7 +30,7 @@ export const IntroSection = () => {
               <span className="text-gradient">GLP-1 Medication?</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Whether you're considering Ozempic, Wegovy, Mounjaro, or you're already experiencing the transformation, 
+              Whether you're considering Ozempic, Wegovy, Mounjaro, or you're already experiencing the transformation,
               there's more to the journey than just weight loss.
             </p>
           </motion.div>
@@ -88,8 +88,13 @@ export const IntroSection = () => {
           >
             <div className="inline-flex items-center gap-3 px-6 py-4 rounded-2xl bg-secondary">
               <div className="w-3 h-3 rounded-full bg-primary animate-pulse" />
-              <p className="text-lg font-semibold text-secondary-foreground">
-                GLP-1 360™ exists to stop this cycle.
+              <p className="text-lg font-semibold text-secondary-foreground flex items-baseline justify-center gap-1 flex-wrap">
+                <span>GLP-1</span>
+                <span className="inline-flex items-baseline">
+                  <span className="font-black text-secondary" style={{ textShadow: "0 0 10px rgba(139,195,74,0.4)", filter: "brightness(1.1)" }}>360</span>
+                  <sup className="text-[0.6em] align-super text-secondary font-bold ml-0.5" style={{ textShadow: "0 0 8px rgba(139,195,74,0.3)" }}>™</sup>
+                </span>
+                <span>exists to stop this cycle.</span>
               </p>
             </div>
           </motion.div>
