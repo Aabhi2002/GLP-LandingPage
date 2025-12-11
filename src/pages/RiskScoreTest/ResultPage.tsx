@@ -61,7 +61,9 @@ export default function ResultPage({ result }: ResultPageProps) {
                 totalScore: totalScore,
                 baseCategory: result.baseCategory,
                 finalCategory: finalCategory,
-                triggeredFlags: result.triggeredFlags // Send as array, script will join it
+                triggeredFlags: result.triggeredFlags, // Send as array, script will join it
+                contactRequested: contactRequested, // Add contact preference
+                sheetName: "Sheet1" // Specify Sheet 1 for risk score test data
             };
 
             // Log payload for debugging

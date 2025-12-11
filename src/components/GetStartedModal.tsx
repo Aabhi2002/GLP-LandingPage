@@ -21,12 +21,42 @@ export const GetStartedModal = ({ isOpen, onClose }: GetStartedModalProps) => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate submission
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        try {
+            // Submit to Google Sheets (Sheet 2)
+            const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
 
-        console.log("Form submitted:", formData);
-        setIsSubmitted(true);
-        setIsSubmitting(false);
+            if (GOOGLE_SCRIPT_URL) {
+                const payload = {
+                    timestamp: new Date().toISOString(),
+                    firstName: formData.firstName,
+                    lastName: formData.lastName,
+                    phone: formData.phone,
+                    email: formData.email,
+                    source: "Get Started Modal",
+                    sheetName: "Sheet2" // Specify Sheet 2 for contact form data
+                };
+
+                console.log("Submitting contact form to Google Sheets:", payload);
+
+                await fetch(GOOGLE_SCRIPT_URL, {
+                    method: "POST",
+                    mode: "no-cors",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                console.log("Contact form submission complete");
+            }
+
+            setIsSubmitted(true);
+        } catch (error) {
+            console.error("Error submitting contact form:", error);
+            setIsSubmitted(true); // Still show success to user
+        } finally {
+            setIsSubmitting(false);
+        }
 
         // Close modal after 2 seconds
         setTimeout(() => {
@@ -146,7 +176,7 @@ export const GetStartedModal = ({ isOpen, onClose }: GetStartedModalProps) => {
                                     onChange={handleChange}
                                     required
                                     className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all bg-gray-50 hover:bg-white"
-                                    placeholder="+1 (555) 000-0000"
+                                    placeholder="+91 98765 43210"
                                 />
                             </div>
 
