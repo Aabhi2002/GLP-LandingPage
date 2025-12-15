@@ -80,7 +80,7 @@ export const HeroSection = () => {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/30 backdrop-blur-md mb-8 shadow-lg"
           >
             <Sparkles className="w-4 h-4 text-green-400" />
-            <span className="text-sm font-medium text-white drop-shadow-lg">The Complete GLP-1 Transformation System</span>
+            <span className="text-sm font-medium text-white drop-shadow-lg">The Complete GLP-1 RA Transformation System</span>
           </motion.div>
 
           {/* Main headline with enhanced shadow */}
@@ -88,30 +88,44 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6 text-center"
             style={{ textShadow: "0 4px 20px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(0, 74, 173, 0.3)" }}
           >
-            GLP-1{" "}
-            <span className="inline-flex items-baseline">
-              <span
-                className="font-black text-green-400"
-                style={{
-                  textShadow: "0 0 20px rgba(139,195,74,0.6), 0 0 10px rgba(139,195,74,0.4), 0 4px 8px rgba(0,0,0,0.5)",
-                  filter: "brightness(1.15)"
-                }}
-              >
-                360
-              </span>
-              <sup
-                className="text-2xl sm:text-3xl align-super text-green-400 ml-1 font-bold"
-                style={{
-                  textShadow: "0 0 15px rgba(139,195,74,0.5), 0 4px 8px rgba(0,0,0,0.5)",
-                  filter: "brightness(1.15)"
-                }}
-              >
-                ™
-              </sup>
-            </span>
+            <div className="flex flex-col items-center gap-2">
+              {/* Main brand line */}
+              <div className="flex items-baseline justify-center flex-wrap gap-2">
+                <span>GLP-1 RA</span>
+                <span className="inline-flex items-baseline">
+                  <span
+                    className="font-black text-green-400"
+                    style={{
+                      textShadow: "0 0 20px rgba(139,195,74,0.6), 0 0 10px rgba(139,195,74,0.4), 0 4px 8px rgba(0,0,0,0.5)",
+                      filter: "brightness(1.15)"
+                    }}
+                  >
+                    360
+                  </span>
+                  <sup
+                    className="text-2xl sm:text-3xl align-super text-green-400 ml-1 font-bold"
+                    style={{
+                      textShadow: "0 0 15px rgba(139,195,74,0.5), 0 4px 8px rgba(0,0,0,0.5)",
+                      filter: "brightness(1.15)"
+                    }}
+                  >
+                    ™
+                  </sup>
+                </span>
+              </div>
+
+              {/* Medication subtitle with elegant styling */}
+              <div className="flex items-center justify-center gap-3 mt-2">
+                <div className="h-px bg-gradient-to-r from-transparent via-white/30 to-transparent w-8 sm:w-12"></div>
+                <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white/90 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg">
+                  Mounjaro • Wegovy
+                </span>
+                <div className="h-px bg-gradient-to-r from-transparent via-white/30 to-transparent w-8 sm:w-12"></div>
+              </div>
+            </div>
           </motion.h1>
 
           {/* Sub-headline with enhanced readability */}
@@ -172,7 +186,7 @@ export const HeroSection = () => {
               className="group"
               onClick={() => navigate('/risk-score-test')}
             >
-              Take the GLP-1 Risk Score Test
+              Take the GLP-1 RA 360™ Risk Score Test
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="heroOutline" size="xl" className="group">

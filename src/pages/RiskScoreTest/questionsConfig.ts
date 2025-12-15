@@ -1,11 +1,11 @@
 import { Question } from './types';
 
 export const questionsConfig: Question[] = [
-    // SECTION A — GLP-1 USAGE PROFILE
+    // SECTION A — GLP-1 RA 360™ USAGE PROFILE
     {
         id: "q1",
-        section: "SECTION A — GLP-1 USAGE PROFILE",
-        question: "Which GLP-1 medication are you on or planning to start?",
+        section: "SECTION A — GLP-1 RA 360™ USAGE PROFILE",
+        question: "Which GLP-1 RA 360™ medication are you on or planning to start?",
         type: "single",
         options: [
             { id: "q1_a", label: "Not started yet", score: 1 },
@@ -16,8 +16,8 @@ export const questionsConfig: Question[] = [
     },
     {
         id: "q2",
-        section: "SECTION A — GLP-1 USAGE PROFILE",
-        question: "Duration of GLP-1 use",
+        section: "SECTION A — GLP-1 RA 360™ USAGE PROFILE",
+        question: "Duration of GLP-1 RA 360™ use",
         type: "single",
         options: [
             { id: "q2_a", label: "Not started yet", score: 0 },
@@ -29,7 +29,7 @@ export const questionsConfig: Question[] = [
     },
     {
         id: "q3",
-        section: "SECTION A — GLP-1 USAGE PROFILE",
+        section: "SECTION A — GLP-1 RA 360™ USAGE PROFILE",
         question: "Weight changes since starting",
         type: "single",
         options: [
@@ -138,12 +138,12 @@ export const questionsConfig: Question[] = [
         question: "What is your immediate goal?",
         type: "single",
         options: [
-            { id: "q11_a", label: "Start GLP-1 safely", score: 1 },
+            { id: "q11_a", label: "Start GLP-1 RA 360™ safely", score: 1 },
             { id: "q11_b", label: "Reduce side effects", score: 2 },
             { id: "q11_c", label: "Improve strength & metabolism", score: 3 },
             { id: "q11_d", label: "Break a plateau", score: 3 },
             { id: "q11_e", label: "Sculpt body / tighten skin", score: 2 },
-            { id: "q11_f", label: "Prepare to stop GLP-1", score: 4 },
+            { id: "q11_f", label: "Prepare to stop GLP-1 RA 360™", score: 4 },
             { id: "q11_g", label: "Avoid rebound after stopping", score: 4 }
         ]
     },
@@ -154,10 +154,10 @@ export const questionsConfig: Question[] = [
         question: "Select if applicable:",
         type: "multi",
         isOverride: true,
-        overrideCategory: "GLP-1 360: EXIT™️",
+        overrideCategory: "GLP-1 RA 360™: EXIT™️",
         options: [
             { id: "q12_a", label: "Appetite < 600 kcal/day", score: 0 },
-            { id: "q12_b", label: "Planning to stop GLP-1 within 30 days", score: 0 },
+            { id: "q12_b", label: "Planning to stop GLP-1 RA 360™ within 30 days", score: 0 },
             { id: "q12_c", label: "Already regained > 3 kg after stopping", score: 0 },
             { id: "q12_d", label: "None", score: 0 }
         ]
@@ -168,7 +168,7 @@ export const questionsConfig: Question[] = [
         question: "Select if applicable:",
         type: "multi",
         isOverride: true,
-        overrideCategory: "GLP-1 360: TRANSFORM™️",
+        overrideCategory: "GLP-1 RA 360™: TRANSFORM™️",
         options: [
             { id: "q13_a", label: "Muscle loss > 1.5–2.0 kg on BCA", score: 0 },
             { id: "q13_b", label: "Plateau > 4 weeks", score: 0 },
@@ -183,7 +183,7 @@ export const questionsConfig: Question[] = [
         question: "Select if applicable:",
         type: "multi",
         isOverride: true,
-        overrideCategory: "GLP-1 360: BASE™️",
+        overrideCategory: "GLP-1 RA 360™: BASE™️",
         options: [
             { id: "q14_a", label: "Completely new starter", score: 0 },
             { id: "q14_b", label: "No side effects", score: 0 },

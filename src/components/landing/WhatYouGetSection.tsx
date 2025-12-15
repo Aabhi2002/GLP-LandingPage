@@ -1,22 +1,22 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { 
-  FileText, 
-  ScanLine, 
-  ClipboardList, 
-  Activity, 
-  Dumbbell, 
-  Heart, 
-  Droplets, 
-  TrendingDown 
+import {
+  FileText,
+  ScanLine,
+  ClipboardList,
+  Activity,
+  Dumbbell,
+  Heart,
+  Droplets,
+  TrendingDown
 } from "lucide-react";
 
 const features = [
   {
     number: "01",
     icon: FileText,
-    title: "GLP-1 Risk Score Assessment",
+    title: "GLP-1 RA 360™ Risk Score Assessment",
     description: "Categorized into BASE / TRANSFORM / EXIT based on your needs",
   },
   {
@@ -82,7 +82,7 @@ export const WhatYouGetSection = () => {
               What You'll <span className="text-gradient">Get</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive toolkit designed to protect your health at every stage of your GLP-1 journey.
+              A comprehensive toolkit designed to protect your health at every stage of your GLP-1 RA 360™ journey.
             </p>
           </motion.div>
 

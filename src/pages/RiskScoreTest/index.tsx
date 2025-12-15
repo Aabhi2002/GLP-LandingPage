@@ -18,10 +18,10 @@ export default function RiskScoreTest() {
 
     // Set page title
     useEffect(() => {
-        document.title = 'GLP-1 360™ Risk Score Test | ReLiv';
+        document.title = 'GLP-1 RA 360™ Risk Score Test | ReLiv';
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
-            metaDescription.setAttribute('content', 'Take the GLP-1 360™ Risk Score Test to discover your personalized category and action plan for safe, effective weight loss.');
+            metaDescription.setAttribute('content', 'Take the GLP-1 RA 360™ Risk Score Test to discover your personalized category and action plan for safe, effective weight loss.');
         }
     }, []);
 
@@ -182,7 +182,7 @@ export default function RiskScoreTest() {
                 {/* Header */}
                 <div className="bg-gradient-to-br from-primary via-blue-700 to-blue-900 rounded-2xl p-8 md:p-12 text-white shadow-xl mb-8">
                     <h1 className="text-3xl md:text-4xl font-display font-bold mb-3 text-center flex items-baseline justify-center flex-wrap gap-2">
-                        <span>GLP-1</span>
+                        <span>GLP-1 RA 360™</span>
                         <span className="inline-flex items-baseline">
                             <span
                                 className="font-black text-green-400"

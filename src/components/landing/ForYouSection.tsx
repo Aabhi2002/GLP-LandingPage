@@ -4,8 +4,8 @@ import { useRef } from "react";
 import { CheckCircle2 } from "lucide-react";
 
 const checklist = [
-  "Thinking of starting GLP-1 medication?",
-  "Already on GLP-1 and want better results?",
+  "Thinking of starting GLP-1 RA 360™ medication?",
+  "Already on GLP-1 RA 360™ and want better results?",
   "Feeling weaker or 'softer' despite weight loss?",
   "Experiencing gut issues or side effects?",
   "Hit a frustrating plateau?",
@@ -34,7 +34,7 @@ export const ForYouSection = () => {
             </h2>
             <p className="text-lg text-muted-foreground">
               <span className="inline-flex items-baseline gap-1 flex-wrap justify-center">
-                <span>If any of these apply to you, GLP-1</span>
+                <span>If any of these apply to you, GLP-1 RA</span>
                 <span className="inline-flex items-baseline">
                   <span className="font-black text-secondary" style={{ textShadow: "0 0 10px rgba(139,195,74,0.4)", filter: "brightness(1.1)" }}>360</span>
                   <sup className="text-[0.6em] align-super text-secondary font-bold ml-0.5" style={{ textShadow: "0 0 8px rgba(139,195,74,0.3)" }}>™</sup>

@@ -6,23 +6,23 @@ import { cn } from "@/lib/utils";
 
 const faqs = [
   {
-    question: "Do you change my GLP-1 medication or dosage?",
-    answer: "No. GLP-1 360™ does not prescribe or adjust your medication. We work alongside your prescribing physician to support your health during treatment. Our focus is on protecting your metabolism, muscle, and overall wellbeing—not managing the medication itself."
+    question: "Do you change my GLP-1 RA 360™ medication or dosage?",
+    answer: "No. GLP-1 RA 360™ does not prescribe or adjust your medication. We work alongside your prescribing physician to support your health during treatment. Our focus is on protecting your metabolism, muscle, and overall wellbeing—not managing the medication itself."
   },
   {
-    question: "Can I join if I'm not on GLP-1 yet?",
-    answer: "Absolutely! Our BASE program is specifically designed for those who are considering or just starting GLP-1 medication. Starting with us means you'll begin your journey optimized for success and avoid common early pitfalls."
+    question: "Can I join if I'm not on GLP-1 RA 360™ yet?",
+    answer: "Absolutely! Our BASE program is specifically designed for those who are considering or just starting GLP-1 RA 360™ medication. Starting with us means you'll begin your journey optimized for success and avoid common early pitfalls."
   },
   {
     question: "Will this help if I've already lost muscle?",
     answer: "Yes. Our TRANSFORM program includes advanced EMS technology and strength protocols specifically designed to rebuild lost muscle mass. Many of our clients have successfully restored their lean mass while continuing their weight loss journey."
   },
   {
-    question: "How do I stop GLP-1 without gaining weight back?",
-    answer: "This is exactly what our EXIT program addresses. We use a combination of reverse dieting, appetite retraining, metabolic healing, and strategic tapering to help you transition off GLP-1 safely without the dreaded rebound weight gain."
+    question: "How do I stop GLP-1 RA 360™ without gaining weight back?",
+    answer: "This is exactly what our EXIT program addresses. We use a combination of reverse dieting, appetite retraining, metabolic healing, and strategic tapering to help you transition off GLP-1 RA 360™ safely without the dreaded rebound weight gain."
   },
   {
-    question: "Is GLP-1 360™ safe?",
+    question: "Is GLP-1 RA 360™ safe?",
     answer: "Yes. All our protocols are evidence-based and supervised by healthcare professionals. We use proven technologies like EMS and IV nutrient therapy that have been used safely for decades. We work with your existing healthcare team to ensure continuity of care."
   },
 ];

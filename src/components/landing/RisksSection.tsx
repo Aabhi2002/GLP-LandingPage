@@ -42,7 +42,7 @@ export const RisksSection = () => {
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
               Hidden Risks of{" "}
-              <span className="text-gradient">GLP-1 Medications</span>
+              <span className="text-gradient">GLP-1 RA 360™ Medications</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Without proper support, your transformation may come at a hidden cost.
@@ -93,7 +93,7 @@ export const RisksSection = () => {
                   <Check className="w-5 h-5 text-primary" />
                 </div>
                 <span className="flex items-baseline gap-1 flex-wrap">
-                  <span>How GLP-1</span>
+                  <span>How GLP-1 RA</span>
                   <span className="inline-flex items-baseline">
                     <span className="font-black text-secondary" style={{ textShadow: "0 0 10px rgba(139,195,74,0.4)", filter: "brightness(1.1)" }}>360</span>
                     <sup className="text-[0.6em] align-super text-secondary font-bold ml-0.5" style={{ textShadow: "0 0 8px rgba(139,195,74,0.3)" }}>™</sup>

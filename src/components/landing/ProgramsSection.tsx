@@ -16,7 +16,7 @@ const programs = [
   {
     id: "base",
     icon: Rocket,
-    title: "GLP-1 360™: BASE",
+    title: "GLP-1 RA 360™: BASE",
     subtitle: "Start Strong",
     perfectFor: "New users, mild side effects, early-stage support",
     color: "bg-teal-100 text-teal-700 border-teal-200",
@@ -33,7 +33,7 @@ const programs = [
   {
     id: "transform",
     icon: RefreshCw,
-    title: "GLP-1 360™: TRANSFORM",
+    title: "GLP-1 RA 360™: TRANSFORM",
     subtitle: "Maximize Results",
     perfectFor: "Muscle loss, plateaus, gut issues, body toning goals",
     color: "bg-coral-100 text-coral-600 border-coral-200",
@@ -51,9 +51,9 @@ const programs = [
   {
     id: "exit",
     icon: LogOut,
-    title: "GLP-1 360™: EXIT",
+    title: "GLP-1 RA 360™: EXIT",
     subtitle: "Sustain Forever",
-    perfectFor: "Ready to stop GLP-1 or already regained weight",
+    perfectFor: "Ready to stop GLP-1 RA or already regained weight",
     color: "bg-sage-200 text-teal-800 border-sage-100",
     accentColor: "bg-teal-700",
     features: [
@@ -87,7 +87,7 @@ export const ProgramsSection = () => {
               Choose Your <span className="text-gradient-coral">Pathway</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Three specialized programs designed for exactly where you are in your GLP-1 journey.
+              Three specialized programs designed for exactly where you are in your GLP-1 RA journey.
             </p>
           </motion.div>
 
@@ -111,7 +111,7 @@ export const ProgramsSection = () => {
                   </div>
                   <div className="flex-1 text-left">
                     <h3 className="text-lg font-bold text-foreground flex items-baseline flex-wrap gap-1">
-                      <span>GLP-1</span>
+                      <span>GLP-1 RA</span>
                       <span className="inline-flex items-baseline">
                         <span
                           className="font-black text-secondary"

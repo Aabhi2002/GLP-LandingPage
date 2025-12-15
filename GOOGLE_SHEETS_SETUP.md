@@ -1,8 +1,8 @@
-# Google Sheets Setup for GLP-1 360™
+# Google Sheets Setup for GLP-1 RA 360™
 
 ## Overview
 The application sends data to a Google Sheets document with 2 sheets:
-- **Sheet1**: GLP-1 Risk Score Test Results
+- **Sheet1**: GLP-1 RA 360™ Risk Score Test Results
 - **Sheet2**: Contact Form Data (Get Started Modal)
 
 ## Google Apps Script Code
@@ -57,7 +57,7 @@ function doPost(e) {
         'Timestamp',
         'Name',
         'Phone',
-        'Q1: GLP-1 Medication',
+        'Q1: GLP-1 RA 360™ Medication',
         'Q2: Duration of Use',
         'Q3: Weight Changes',
         'Q4: Weakness/Fatigue',
@@ -148,7 +148,7 @@ function doPost(e) {
 ### 1. Create Google Sheets Document
 1. Go to [Google Sheets](https://sheets.google.com)
 2. Create a new spreadsheet
-3. Name it "GLP-1 360 Risk Score Test Results"
+3. Name it "GLP-1 RA 360™ Risk Score Test Results"
 4. The script will automatically create Sheet1 and Sheet2
 
 ### 2. Create Google Apps Script
@@ -179,7 +179,7 @@ VITE_GOOGLE_SCRIPT_URL=https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec
 - Name
 - Phone
 - Q1-Q14 (All question responses)
-  - Q1: GLP-1 Medication
+  - Q1: GLP-1 RA 360™ Medication
   - Q2: Duration of Use
   - Q3: Weight Changes
   - Q4: Weakness/Fatigue

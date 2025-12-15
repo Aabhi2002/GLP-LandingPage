@@ -91,7 +91,7 @@ export const GetStartedModal = ({ isOpen, onClose }: GetStartedModalProps) => {
                 <div className="p-8 pb-6 text-center border-b border-gray-100">
                     <div className="inline-flex items-baseline gap-1 mb-2">
                         <h2 className="text-3xl font-display font-bold text-gray-900">
-                            Get Started with GLP-1
+                            Get Started with GLP-1 RA 360™
                         </h2>
                         <span className="inline-flex items-baseline ml-1">
                             <span

@@ -27,7 +27,7 @@ export const IntroSection = () => {
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
               Are You Starting or Already on a{" "}
-              <span className="text-gradient">GLP-1 Medication?</span>
+              <span className="text-gradient">GLP-1 RA Medication?</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Whether you're considering Ozempic, Wegovy, Mounjaro, or you're already experiencing the transformation,
@@ -45,7 +45,7 @@ export const IntroSection = () => {
             <div className="absolute -left-4 top-0 bottom-0 w-1 gradient-coral rounded-full" />
             <div className="pl-8 py-4">
               <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground leading-tight">
-                "Weight loss with GLP-1 is easy.
+                "Weight loss with GLP-1 RA is easy.
               </p>
               <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-muted-foreground leading-tight mt-2">
                 Keeping your health, strength, and metabolism is not."
@@ -89,7 +89,7 @@ export const IntroSection = () => {
             <div className="inline-flex items-center gap-3 px-6 py-4 rounded-2xl bg-secondary">
               <div className="w-3 h-3 rounded-full bg-primary animate-pulse" />
               <p className="text-lg font-semibold text-secondary-foreground flex items-baseline justify-center gap-1 flex-wrap">
-                <span>GLP-1</span>
+                <span>GLP-1 RA</span>
                 <span className="inline-flex items-baseline">
                   <span className="font-black text-secondary" style={{ textShadow: "0 0 10px rgba(139,195,74,0.4)", filter: "brightness(1.1)" }}>360</span>
                   <sup className="text-[0.6em] align-super text-secondary font-bold ml-0.5" style={{ textShadow: "0 0 8px rgba(139,195,74,0.3)" }}>™</sup>

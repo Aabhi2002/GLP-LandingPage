@@ -246,7 +246,7 @@ export default function ResultPage({ result }: ResultPageProps) {
                         {finalCategory.includes('EXIT') && (
                             <div className="space-y-5">
                                 {[
-                                    { title: 'Safe GLP-1 Tapering Protocol', desc: 'Gradually reduce medication under supervision to minimize rebound weight gain risk' },
+                                    { title: 'Safe GLP-1 RA 360™ Tapering Protocol', desc: 'Gradually reduce medication under supervision to minimize rebound weight gain risk' },
                                     { title: 'Reverse Diet & Appetite Training', desc: 'Slowly increase caloric intake while retraining natural hunger signals' },
                                     { title: 'Metabolic Stabilization', desc: 'Restore metabolic rate through strategic nutrition and exercise programming' },
                                     { title: 'Strength Rebuilding & Gut Reset', desc: 'Intensive strength training combined with gut health restoration for long-term success' }

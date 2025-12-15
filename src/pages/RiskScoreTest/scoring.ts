@@ -28,11 +28,11 @@ export function calculateScore(answers: Answers, questionsConfig: Question[]): n
 
 export function getBaseCategory(score: number): string {
     if (score >= 0 && score <= 15) {
-        return "GLP-1 360: BASE™️";
+        return "GLP-1 RA 360™: BASE™️";
     } else if (score >= 16 && score <= 30) {
-        return "GLP-1 360: TRANSFORM™️";
+        return "GLP-1 RA 360™: TRANSFORM™️";
     } else {
-        return "GLP-1 360: EXIT™️";
+        return "GLP-1 RA 360™: EXIT™️";
     }
 }
 
@@ -84,7 +84,7 @@ export function getFinalCategory(score: number, answers: Answers, questionsConfi
 
     if (override.isOverride) {
         return {
-            category: override.category || "GLP-1 360: BASE™️",
+            category: override.category || "GLP-1 RA 360™: BASE™️",
             isOverride: true,
             triggeredBy: override.triggeredBy,
             flags: override.flags
@@ -103,11 +103,11 @@ export function getFinalCategory(score: number, answers: Answers, questionsConfi
 
 export function getCategoryExplanation(category: string): CategoryExplanation {
     const explanations: Record<string, CategoryExplanation> = {
-        "GLP-1 360: BASE™️": {
-            title: "🟢 GLP-1 360: BASE™️",
+        "GLP-1 RA 360™: BASE™️": {
+            title: "🟢 GLP-1 RA 360™: BASE™️",
             subtitle: "You're in the starting or low-risk phase.",
             meaning: [
-                "You're early in your GLP-1 journey",
+                "You're early in your GLP-1 RA 360™ journey",
                 "Minimal muscle loss so far",
                 "Side effects are mild",
                 "Strength/metabolism still stable"
@@ -119,8 +119,8 @@ export function getCategoryExplanation(category: string): CategoryExplanation {
                 "Weekly monitoring to avoid problems"
             ]
         },
-        "GLP-1 360: TRANSFORM™️": {
-            title: "🟡 GLP-1 360: TRANSFORM™️",
+        "GLP-1 RA 360™: TRANSFORM™️": {
+            title: "🟡 GLP-1 RA 360™: TRANSFORM™️",
             subtitle: "You're in the muscle-loss/plateau correction phase.",
             meaning: [
                 "Strength is dropping",
@@ -140,15 +140,15 @@ export function getCategoryExplanation(category: string): CategoryExplanation {
             ],
             note: "This is the most common category."
         },
-        "GLP-1 360: EXIT™️": {
-            title: "🔴 GLP-1 360: EXIT™️",
+        "GLP-1 RA 360™: EXIT™️": {
+            title: "🔴 GLP-1 RA 360™: EXIT™️",
             subtitle: "You need tapering, rebound-risk prevention & metabolic reset.",
             meaning: [
                 "Severe muscle loss risk",
                 "Very low appetite",
                 "Significant side effects",
                 "Plateau or sudden regain",
-                "Planning to stop GLP-1",
+                "Planning to stop GLP-1 RA 360™",
                 "Losing control of hunger after stopping"
             ],
             youNeed: [
@@ -157,10 +157,10 @@ export function getCategoryExplanation(category: string): CategoryExplanation {
                 "Metabolic stabilisation",
                 "Strength rebuilding",
                 "Gut reset",
-                "Safe GLP-1 taper protocol"
+                "Safe GLP-1 RA 360™ taper protocol"
             ]
         }
     };
 
-    return explanations[category] || explanations["GLP-1 360: BASE™️"];
+    return explanations[category] || explanations["GLP-1 RA 360™: BASE™️"];
 }

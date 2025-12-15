@@ -2,7 +2,7 @@
 
 ## ✅ Integration Complete!
 
-The GLP-1 360™ Risk Score Test has been successfully integrated into your application.
+The GLP-1 RA 360™ Risk Score Test has been successfully integrated into your application.
 
 ## 🎯 What You Need to Do Now
 
@@ -15,7 +15,7 @@ npm run dev
 
 Then:
 1. Open http://localhost:5173
-2. Click the green "Take the GLP-1 Risk Score Test" button
+2. Click the green "Take the GLP-1 RA 360™ Risk Score Test" button
 3. Answer a few questions
 4. See your results
 5. Click "Back to Home"
@@ -96,7 +96,7 @@ rm -rf src/Risk-Score
 
 Quick tests to run:
 
-- [ ] Click "Take the GLP-1 Risk Score Test" button
+- [ ] Click "Take the GLP-1 RA 360™ Risk Score Test" button
 - [ ] Answer questions (progress bar updates)
 - [ ] Submit contact form
 - [ ] See results page

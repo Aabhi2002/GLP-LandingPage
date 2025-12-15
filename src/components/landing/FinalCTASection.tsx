@@ -61,7 +61,7 @@ export const FinalCTASection = () => {
             className="mb-10"
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary-foreground leading-tight mb-8">
-              Ready to transform your GLP-1 journey{" "}
+              Ready to transform your GLP-1 RA 360™ journey{" "}
               <span className="text-accent">the right way?</span>
             </h2>
           </motion.div>

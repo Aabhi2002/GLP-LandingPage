@@ -42,7 +42,7 @@ export const Header = () => {
               "text-xl sm:text-2xl font-extrabold font-display transition-colors flex items-baseline",
               isScrolled ? "text-foreground" : "text-primary-foreground"
             )}>
-              GLP-1{" "}
+              GLP-1 RA{" "}
               <span className="inline-flex items-baseline ml-1">
                 <span
                   className={cn(

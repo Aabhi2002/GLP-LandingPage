@@ -15,7 +15,7 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent/10 hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Custom variants for GLP-1 360
+        // Custom variants for GLP-1 RA 360™
         hero: "bg-green-500 text-white hover:bg-green-600 shadow-green hover:shadow-xl hover:-translate-y-1 text-base px-8 py-6 font-bold",
         heroOutline: "border-2 border-white/40 bg-white/10 text-white hover:bg-white/20 backdrop-blur-md text-base px-8 py-6 font-semibold shadow-lg",
         green: "bg-secondary text-secondary-foreground hover:bg-green-600 shadow-green hover:-translate-y-0.5",
